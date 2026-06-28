@@ -1,0 +1,135 @@
+.wrap {
+  background: rgba(10, 10, 28, 0.8);
+  border: 1px solid rgba(180, 79, 255, 0.15);
+  border-radius: 24px;
+  padding: 28px 28px 24px;
+  backdrop-filter: blur(12px);
+}
+
+.sectionLabel {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #b44fff;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #e0e0ff;
+  margin-bottom: 4px;
+}
+
+.sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: #44446a;
+  margin-bottom: 24px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rank {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.65rem;
+  color: #33336a;
+  width: 22px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.name {
+  width: 110px;
+  flex-shrink: 0;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #aaaacc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+}
+
+.barTrack {
+  flex: 1;
+  height: 28px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.04);
+  position: relative;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  min-width: 4px;
+}
+
+.barSheen {
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  animation: sheen 3s ease-in-out infinite;
+}
+
+@keyframes sheen {
+  0%   { left: -100%; }
+  60%  { left: 150%; }
+  100% { left: 150%; }
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 54px;
+  flex-shrink: 0;
+}
+
+.count {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.72rem;
+  color: #ccccee;
+  line-height: 1.1;
+}
+
+.pct {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #44446a;
+}
+
+.more {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.8rem;
+  color: #33336a;
+  text-align: center;
+  margin-top: 16px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 500px) {
+  .name { width: 70px; font-size: 0.78rem; }
+  .wrap { padding: 20px 14px; }
+}

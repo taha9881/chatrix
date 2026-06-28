@@ -1,0 +1,5 @@
+backend/sessions/
+backend/uploads/
+backend/venv/
+backend/__pycache__/
+backend/.env

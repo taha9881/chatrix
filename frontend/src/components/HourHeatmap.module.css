@@ -1,0 +1,121 @@
+.wrap {
+  background: rgba(10, 10, 28, 0.8);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  border-radius: 24px;
+  padding: 28px 28px 24px;
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: visible;
+}
+
+.sectionLabel {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #00d4ff;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #e0e0ff;
+  margin-bottom: 4px;
+}
+
+.sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: #44446a;
+  margin-bottom: 16px;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 18px;
+}
+
+.legendText {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.72rem;
+  color: #44446a;
+}
+
+.legendCell {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.gridWrap {
+  overflow-x: auto;
+}
+
+.dayHeaders {
+  display: flex;
+  margin-bottom: 4px;
+  min-width: 280px;
+}
+
+.hourSpacer {
+  width: 32px;
+  flex-shrink: 0;
+}
+
+.dayLabel {
+  flex: 1;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #44446a;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 280px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.hourLabel {
+  width: 28px;
+  flex-shrink: 0;
+  font-family: 'Orbitron', monospace;
+  font-size: 0.62rem;
+  color: #33336a;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.cell {
+  flex: 1;
+  height: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.cell:hover {
+  transform: scale(1.4);
+  z-index: 5;
+  border-color: rgba(0, 212, 255, 0.5);
+}
+
+@media (max-width: 500px) {
+  .wrap { padding: 20px 14px; }
+  .cell { height: 16px; }
+}

@@ -1,0 +1,76 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 48px;
+  background: rgba(5, 5, 15, 0.75);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(180, 79, 255, 0.18);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brandName {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #ff00cc, #b44fff, #00d4ff, #00ffcc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.link {
+  color: #9090bb;
+  text-decoration: none;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #00d4ff;
+}
+
+.ctaBtn {
+  padding: 8px 22px;
+  border-radius: 8px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #ff00cc, #b44fff, #00d4ff);
+  box-shadow: 0 0 18px rgba(180, 79, 255, 0.5);
+  transition: box-shadow 0.25s, transform 0.2s;
+}
+
+.ctaBtn:hover {
+  box-shadow: 0 0 32px rgba(255, 0, 204, 0.7);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .nav { padding: 12px 20px; }
+  .links { gap: 14px; }
+  .link { display: none; }
+}

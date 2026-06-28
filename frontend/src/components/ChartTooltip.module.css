@@ -1,0 +1,37 @@
+.tooltip {
+  position: fixed;
+  background: rgba(8, 6, 22, 0.97);
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.88rem;
+  color: #ddddf5;
+  pointer-events: none;
+  z-index: 10000;
+  white-space: nowrap;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.7);
+}
+
+.above {
+  transform: translateY(-100%);
+}
+
+.below {
+  transform: translateY(0);
+}
+
+.magenta {
+  border: 1px solid rgba(255, 0, 204, 0.4);
+}
+
+.magenta strong {
+  color: #ff00cc;
+}
+
+.cyan {
+  border: 1px solid rgba(0, 212, 255, 0.4);
+}
+
+.cyan strong {
+  color: #00d4ff;
+}

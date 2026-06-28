@@ -1,0 +1,81 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  padding: 0 48px 40px;
+}
+
+.line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(180, 79, 255, 0.4), rgba(0, 212, 255, 0.4), transparent);
+  margin-bottom: 40px;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brandName {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #ff00cc, #b44fff, #00d4ff, #00ffcc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tagline {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #44446a;
+  margin-top: 2px;
+}
+
+.links {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.link {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #5555aa;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover { color: #00d4ff; }
+
+.copy {
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.82rem;
+  color: #33334a;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 640px) {
+  .footer { padding: 0 20px 32px; }
+  .inner { justify-content: center; text-align: center; }
+  .brand { justify-content: center; }
+  .links { justify-content: center; }
+}
